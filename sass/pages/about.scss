@@ -1,0 +1,187 @@
+body {
+    background-color: #eee;
+}
+
+.about {
+    margin-top: 2rem;
+
+    &__author {
+        display: flex;
+        justify-content: flex-start;
+        padding: 0 1rem;
+
+        font-family: 'Raleway', sans-serif;
+        color: $color-gray-two;
+        font-size: 1.6rem; 
+        font-weight: 600;
+    }
+
+    &__birth {
+        display: flex;
+        justify-content: flex-start;
+        padding: 0 1rem;
+        margin: 0px;
+
+        font-family: 'Raleway', sans-serif;
+        color: $color-gray-two;
+        font-size: 1rem; 
+        font-weight: 200;
+    }
+
+    &__image {
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem; //48px
+
+        &-author {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            border: 3px solid $color-gray-one;
+        }
+    }
+
+    &__desc {
+        margin-top: 2rem;
+        padding: 0 2rem 0 2rem;
+
+
+        &-text {
+            font-family: 'Raleway', sans-serif;
+            color: $color-gray-two;
+            font-size: 1rem; 
+            font-weight: 200;
+            
+            hyphens: auto;
+            text-align: justify;
+            line-height: 1.75rem; 
+        }
+    }
+
+    &__buttons {
+
+        display: flex;
+        justify-content: space-evenly; 
+
+        &-anchor {
+            text-decoration: none;
+        }
+
+        &-1 {
+            @include button-sub-3;
+            text-decoration: none;
+
+            &:hover {
+                color: $color-primary-ligth;
+                background-color: $color-gray-two;
+                border: 1px solid $color-gray-two;
+            }
+        }
+
+        &-2 {
+            @include button-sub-3;
+            text-decoration: none;
+
+            &:hover {
+                color: $color-primary-ligth;
+                background-color: $color-gray-two;
+                border: 1px solid $color-gray-two;
+            }
+        }
+    }
+}
+
+@media(min-width: 1200px){
+    .about {
+        margin-top: 2rem;
+    
+        &__author {
+            display: flex;
+            justify-content: flex-start;
+            padding: 0 5rem;
+    
+            font-family: 'Raleway', sans-serif;
+            color: $color-gray-two;
+            font-size: 2.5rem; 
+            font-weight: 800;
+        }
+    
+        &__birth {
+            display: flex;
+            justify-content: flex-start;
+            padding: 0 5rem;
+            margin: 0px;
+    
+            font-family: 'Raleway', sans-serif;
+            color: $color-gray-two;
+            font-size: 1.2rem; 
+            font-weight: 200;
+        }
+    
+        &__image {
+            display: flex;
+            justify-content: center;
+            margin-top: 3rem; //48px
+    
+            &-author {
+                height: 260px;
+                width: 260px;
+                border-radius: 50%;
+                border: 3px solid $color-gray-one;
+            }
+        }
+    
+        &__desc {
+            margin-top: 4rem;
+            padding: 0 18rem 0 18rem;
+    
+    
+            &-text {
+                font-family: 'Raleway', sans-serif;
+                color: $color-gray-two;
+                font-size: 1.2rem; 
+                font-weight: 200;
+                
+                hyphens: auto;
+                text-align: justify;
+                line-height: 2rem; 
+            }
+        }
+    
+        &__buttons {
+    
+            display: flex;
+            justify-content: space-evenly; 
+    
+            &-anchor {
+                text-decoration: none;
+                height: 3rem;
+               // width: 10rem;
+            }
+    
+            &-1 {
+                @include button-sub-3;
+                text-decoration: none;
+                margin-left: 20rem;
+    
+                &:hover {
+                    color: $color-primary-ligth;
+                    background-color: $color-gray-two;
+                    border: 1px solid $color-gray-two;
+                }
+            }
+    
+            &-2 {
+                @include button-sub-3;
+                text-decoration: none;
+                margin-right: 20rem;
+    
+                &:hover {
+                    color: $color-primary-ligth;
+                    background-color: $color-gray-two;
+                    border: 1px solid $color-gray-two;
+                }
+            }
+        }
+    }
+}
