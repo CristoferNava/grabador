@@ -43,8 +43,8 @@
     <div class="container">
 
         <!--Este Row se renderiza para generar conuntos de imagenes en distintos rows-->
-            <div class="row">
-                {% for picture in pictures %}
+            {% for picture in pictures %}
+            <div class="row BananaEffect-2">
                 <div class="col s6 m6 l3 xl3">
                     <a href="{% url 'picture' picture.id picture.title|slugify %}">
                         <img class="One-elements" src="{{ picture.image.url }}"/>
@@ -66,7 +66,7 @@
                     </div>
 
                     <div class="footer_content-logo">
-                        <img class="footer_content-logo__image" src="{% static 'public/images/logo.png' %}">
+                        <img class="footer_content-logo__image" src="{% static 'public/images/logo.png' %}" alt="logo">
                     </div>
 
                     <div class="footer_content-text">

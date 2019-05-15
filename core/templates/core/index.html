@@ -43,23 +43,26 @@
 
     <div class="headerland" id="header">
         <div class="headerland__container">
-            <img class="headerland__logo" src="{% static 'public/images/logo.png' %}" alt="elpinchegrabador">
-            <a class="headerland__anchor" href="#banner-1"><button class="headerland__button">DESCUBRIR &nbsp; 
-                <img class="headerland__button-arrow" src="{% static 'public/images/down_arrow.png' %}" alt="down_arrow"/>
-            </button></a>
+            <img class="headerland__logo BananaEffect" src="./public/images/logo.png" alt="elpinchegrabador">
+            <form class="headerland__container BananaEffect" action="#banner-1" method="get">
+                <button class="headerland__button">
+                    DESCUBRIR &nbsp; 
+                    <img class="headerland__button-arrow" src="./public/images/down_arrow.png" alt="down_arrow"/>
+                </button>
+            </form>
         </div>
     </div>
     
     <div class="bannerOne" id="banner-1"> 
-        <h2 class="bannerOne__title">
+        <h2 class="bannerOne__title BananaEffect">
             ...comencé como ayudante de un grabador, 
             es por eso que soy 
-            <span class="bannerOne__title bannerOne__title-artist">
-                <img class="bannerOne__title-artist-sign" src="{% static 'public/images/FIRMA_PINCHE.png' %}"> 
+            <span class="bannerOne__title bannerOne__title-artist  BananaEffect">
+                <img class="bannerOne__title-artist-sign" src="{% static 'public/images/FIRMA_PINCHE.png' %}" alt="sign"> 
             </span>
         </h2>
 
-        <video class="responsive-video" controls loop>
+        <video class="responsive-video BananaEffect" controls loop>
             <source  src="{% static 'public/images/elpinchegrabador.mp4' %}" type="video/mp4">
         </video>
 
@@ -84,7 +87,7 @@
                 <div class="col s6 m6 l3">
                 
                     <a href="{% url 'picture' picture.id picture.title|slugify %}">
-                        <img  class="one-elements" src="{{ picture.image.url }}"/>
+                        <img  class="one-elements" src="{{ picture.image.url }}" alt="galery_element"/>
                     </a> 
                 </div>
                 {% endfor %}
@@ -135,14 +138,14 @@
         </div>
 
                 <div class="bannerTwo-buttons">
-                        <a class="bannerOne-buttons-anchor-1" href="{% url 'gallery' %}">
+                        <form class="bannerOne-buttons-anchor-1" action="{% url 'gallery' %}" method="get">
                             <button class="bannerTwo-buttons-1">EXPLORAR</button>
-                        </a>
-                        <a class="bannerOne-buttons-anchor-2" href="#banner-3">
+                        </form>
+                        <form class="bannerOne-buttons-anchor-2" href="#banner-3">
                             <button  class="bannerTwo-buttons-2">BLOG &nbsp;
                                 <img class="bannerOne-buttons-2-arrow" src="{% static './public/images/down_arrow.png' %}" alt="down_arrow"/>
                             </button>
-                        </a>
+                        </form>
                     </div>
 
                         <div id="banner-3" class="bannerThree" style="margin-top: 18rem;">
@@ -151,13 +154,13 @@
                                 {% if forloop.counter0 < 3 %}
                                 <article class="card" style="margin-top: 2rem;">
                                   <header class="card__thumb">
-                                    <a href="{% url 'article' article.id article.title|slugify %}"><img src="{{ article.image.url }}"/></a>
+                                    <a href="{% url 'article' article.id article.title|slugify %}"><img src="{{ article.image.url }}" alt="galery_element"/></a>
                                   </header>
-                                  <date class="card__date">
+                                  <p class="card__date">
                                     <span class="card__date__day">{{ article.day }}</span>
                                     <br/>
                                     <span class="card__date__month">{{ article.month }}</span>
-                                  </date>
+                                  </p>
                                   
                                   <div class="card__body">
                                     {% if forloop.first %}<div class="card__category"><a href="{% url 'article' article.id article.title|slugify %}">Nuevo</a></div>{% endif %}
@@ -218,9 +221,9 @@
                             <!-- </div> -->
                         </div>
 
-                        <a class="blog" href="{% url 'blog' %}">
+                        <form class="blog" action="{% url 'blog' %}" method="get">
                             <button class="blog__button">PUBLICACIONES</button>
-                        </a> 
+                        </form> 
             
                 <footer class="footer_content">
                     <div class="footer_content-social">
@@ -234,19 +237,19 @@
                     </div>
 
                     <div class="footer_content-logo">
-                        <img class="footer_content-logo__image" src="{% static 'public/images/logo.png' %}">
+                        <img class="footer_content-logo__image" src="{% static 'public/images/logo.png' %}" alt="logo">
                     </div>
 
                     <div class="footer_content-text">
                         <small class="footer_content-text__desc">©El Pinche Grabador, 2019</small>
                     </div>
 
-                    <a class="footer_content-button" href="#top">
+                    <form class="footer_content-button" action="#top" method="get">
                         <button class="footer_content-button-1">
                             IR A INICIO &nbsp; 
                             <img class="footer_content-button-1-arrow" src="{% static './public/images/down_arrow.png' %}" alt="up_arrow"/>
                         </button>
-                    </a> 
+                    </form> 
                 </footer>
 
 

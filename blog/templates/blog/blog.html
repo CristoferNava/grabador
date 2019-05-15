@@ -37,12 +37,11 @@
 
     <div id="blog__zone"></div>
     
-    
-    <div id="banner-3" class="blog-enable" style="margin-top: 17rem;">
     {% for article in blogs %}
+    <div id="banner-3" class="blog-enable BananaEffect-2" style="margin-top: 17rem;">
         <article class="card">
             <header class="card__thumb">
-                <a href="{% url 'article' article.id article.title|slugify %}"><img src="{{ article.image.url }}"/></a>
+                <a href="{% url 'article' article.id article.title|slugify %}"><img src="{{ article.image.url }}" alt="article"/></a>
             </header>
             <date class="card__date">
                 <span class="card__date__day">{{ article.day }}</span>
@@ -63,8 +62,8 @@
                     <span class="icon ion-chatbox"></span>Por: {{ article.author }}
                 </footer>
         </article>
-    {% endfor %}
     </div>
+    {% endfor %}
     
 
     <footer class="footer_content">
@@ -79,7 +78,7 @@
             </div>
 
             <div class="footer_content-logo">
-                <img class="footer_content-logo__image" src="{% static 'public/images/logo.png' %}">
+                <img class="footer_content-logo__image" src="{% static 'public/images/logo.png' %}" alt="logo">
             </div>
 
             <div class="footer_content-text">

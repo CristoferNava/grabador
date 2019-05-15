@@ -12,6 +12,10 @@
         justify-content: center;
     }
 
+    &__button {
+        text-decoration: none;
+    }
+
     &__logo {
         height: 21rem; //336px
         width: 15rem; //240px
