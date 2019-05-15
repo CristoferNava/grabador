@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#3C484E">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="{% static 'src/css/style.css' %}" type="text/css">
+    <!-- Favicon -->
+    <link rel="icon" href="{% static 'public/images/logo.png' %}">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
+
+    <title>El Pinche Grabador | Blog</title>
+</head>
+<body>
+
+        <div class="nave" id="top">
+                <input type="checkbox" class="nave__checkbox" id="navi-toggle">
+                <label for="navi-toggle" class="nave__button">
+                    <span class="nave__icon">&nbsp;</span>
+                </label>
+    
+                <div class="nave__background">&nbsp;</div>
+    
+                <header class="nave__navig">
+                    <ul class="nave__list">
+                        <li class="nave__item"><a href="{% url 'home' %}" class="nave__link">INICIO</a></li>
+                        <li class="nave__item"><a href="{% url 'gallery' %}" class="nave__link">GALERÍA</a></li>
+                        <li class="nave__item"><a href="{% url 'blog' %}" class="nave__link">BLOG</a></li>
+                        <li class="nave__item"><a href="{% url 'about' %}" class="nave__link">SOBRE MÍ</a></li>
+                        <li class="nave__item"><a href="{% url 'points' %}" class="nave__link">PUNTOS DE VENTA</a></li>
+                        <li class="nave__item"><a href="{% url 'form' %}" class="nave__link">Contácto</a></li>
+                    </ul>
+                </header>
+            </div>
+    <header class="article__top">
+        <img class="article__top-img" src="{{ article.image.url }}">
+    </header>
+
+        <div class="article__head">
+            <h1 class="article__head-title">{{ article.title }}</h1>
+            <p class="article__head-data">Por: {{ article.author }}</p>
+            <p class="article__head-data">{{ article.day }}/{{ article.month }}</p>
+        </div>
+
+            <div class="article__content">
+                <!--<p class="article__content-text">-->
+                   {{ article.content|safe }}
+            </div>
+
+
+
+            <footer class="footer_content">
+                    <div class="footer_content-social">
+                        <a href="https://www.instagram.com/elpinchegrabador/"><img class="footer_content-social-1" src="{% static 'public/images/instagram_logo.svg' %}" alt="instagram"></a>
+                        <a href="https://www.facebook.com/Taller-elpinchegrabador-858101250939661/"><img class="footer_content-social-1" src="{% static 'public/images/facebook_logo.svg' %}" alt="facebook"></a>
+                        <a href="{% url 'form' %}"><img class="footer_content-social-1" src="{% static 'public/images/email.svg' %}" alt="e-mail"></a>
+                    </div>
+
+                    <div class="footer_content-contact">
+                        <p class="footer_content-contact-1">elpinchegrabador@gmail.com</p>
+                    </div>
+
+                    <div class="footer_content-logo">
+                        <img class="footer_content-logo__image" src="{% static 'public/images/logo.png' %}">
+                    </div>
+
+                    <div class="footer_content-text">
+                        <small class="footer_content-text__desc">©El Pinche Grabador, 2019</small>
+                    </div>
+
+                    <a class="footer_content-button" href="#top">
+                        <button class="footer_content-button-1">
+                            IR A INICIO &nbsp; 
+                            <img class="footer_content-button-1-arrow" src="{% static 'public/images/down_arrow.png' %}" alt="up_arrow"/>
+                        </button>
+                    </a> 
+                </footer>
+</body>
+</html>
