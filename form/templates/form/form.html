@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#3C484E">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="{% static 'src/css/style.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'src/css/form.css' %}" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Favicon -->
+    <link rel="icon" href="{% static 'public/images/mezcal.png' %}">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
+
+    <title>elpinchegrabador | Cóntacto</title>
+</head>
+<body>
+        
+    <div class="nave">
+        <input type="checkbox" class="nave__checkbox" id="navi-toggle">
+        <label for="navi-toggle" class="nave__button">
+            <span class="nave__icon">&nbsp;</span>
+        </label>
+
+        <div class="nave__background">&nbsp;</div>
+
+        <header class="nave__navig">
+            <ul class="nave__list">
+                <li class="nave__item"><a href="{% url 'home' %}" class="nave__link">INICIO</a></li>
+                <li class="nave__item"><a href="{% url 'gallery' %}" class="nave__link">GALERÍA</a></li>
+                <li class="nave__item"><a href="{% url 'blog' %}" class="nave__link">BLOG</a></li>
+                <li class="nave__item"><a href="{% url 'about' %}" class="nave__link">SOBRE MÍ</a></li>
+                <li class="nave__item"><a href="{% url 'points' %}" class="nave__link">PUNTOS DE VENTA</a></li>
+                <li class="nave__item"><a href="{% url 'form' %}" class="nave__link">Contácto</a></li>
+            </ul>
+        </header>
+    </div>
+
+
+    
+        <div id="form-main">
+                <div id="form-div">
+                  <form class="form" id="form1" method='post'>
+                  {% csrf_token %}
+                    <p class="name">
+                    {{ form.name }}
+                   <!-- <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Nombre" id="name" />-->
+                    </p>
+                    <p class="email">
+                      {{ form.email }}
+                      <!--<input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="E-mail" />-->
+                    </p>
+                    <p class="text">
+                      {{ form.text }}
+                      <!--<textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Escríbenos..."></textarea>-->
+                    </p>
+                    <div class="submit">
+                      <input type="submit" value="ENVIAR" id="button-blue"/>
+                      <div class="ease"></div>
+                    </div>
+                  </form>
+                </div>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

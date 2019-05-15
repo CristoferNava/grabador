@@ -1,0 +1,16 @@
+{
+  "name": "elpinchegrabador",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss src/css/style.css"
+  },
+  "author": "oliver",
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.1",
+    "node-sass": "^4.11.0",
+    "nodemon": "^1.18.11"
+  }
+}
