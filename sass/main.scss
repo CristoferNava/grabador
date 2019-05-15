@@ -1,0 +1,27 @@
+//Abstract
+@import "abstract/variables";
+@import "abstract/utilities";
+@import "abstract/mixins";
+
+//Base
+@import "base/base";
+
+//Layout
+@import "layout/header";
+@import "layout/bannerOne";
+@import "layout/bannerTwo";
+@import "layout/bannerThree";
+@import "layout/footer";
+@import "layout/navigation";
+
+//Components 
+@import "components/animations";
+
+//Pages
+@import "pages/galeria";
+@import "pages/blog";
+@import "pages/article";
+@import "pages/store";
+@import "pages/about";
+@import "pages/taller";
+@import "pages/puntos";

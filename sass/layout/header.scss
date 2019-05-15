@@ -1,0 +1,154 @@
+.headerland {
+    background-image: linear-gradient(to right bottom, rgba($color-secondary-dark, 0.701),rgba($color-tertiary-dark, 0.705)) ,url('../../public/images/galeria/galerias/pocitos/pocitos_4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 100vh;  //45.6875rem 731px
+    width: 100%;
+    position: relative;
+
+    &__container {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__logo {
+        height: 21rem; //336px
+        width: 15rem; //240px
+        position: absolute;
+
+        transform: translate(0%, 50%);
+    }
+
+    @include button-main;
+
+    //MEDIA QUERY FOR DESKTOP
+    @media(min-width: 1500px){
+        &__container {
+            display: flex;
+            justify-content: center;
+        }
+        
+        &__logo {
+            height: 26rem; //416px
+            width: 20rem; //318px
+            position: absolute;
+    
+            transform: translate(0%, 50%);
+        }
+    
+        @include button-main;
+    }
+
+    @media(min-width: 1400px){
+        background-image: linear-gradient(to right bottom, rgba($color-secondary-dark, 0.701),rgba($color-tertiary-dark, 0.705)) ,url('../../public/images/galeria/galerias/pocitos/pocitos_8.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        height: 100vh;  //45.6875rem 731px
+        width: 100%;
+        position: relative;
+    }
+
+    //MEDIA QUERY FOR DESKTOP 2
+    @media screen and (min-width: 1100px) and (max-width: 1399px){
+        background-image: linear-gradient(to right bottom, rgba($color-secondary-dark, 0.701),rgba($color-tertiary-dark, 0.705)) ,url('../../public/images/galeria/galerias/pocitos/pocitos_8.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        height: 800px;  //45.6875rem 731px
+        width: 100%;
+        position: relative;
+
+        &__container {
+            display: flex;
+            justify-content: center;
+        }
+        
+        &__logo {
+            height: 22rem; //352px
+            width: 16rem; //256px
+            position: absolute;
+    
+            transform: translate(0%, 50%);
+        }
+    
+        @include button-main;
+    }
+
+
+    @media screen and (min-width: 900px) and (max-width: 1099px){
+        background-image: linear-gradient(to right bottom, rgba($color-secondary-dark, 0.701),rgba($color-tertiary-dark, 0.705)) ,url('../../public/images/galeria/galerias/pocitos/pocitos_8.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        height: 850px;  
+        width: 100%;
+        position: relative;
+
+        &__container {
+            display: flex;
+            justify-content: center;
+        }
+        
+        &__logo {
+            height: 24rem; //384px
+            width: 18rem; //288px
+            position: absolute;
+    
+            transform: translate(0%, 50%);
+        }
+    
+        @include button-main;
+    }
+
+    @media screen and(min-width: 650px) and(max-width:899px){
+        background-image: linear-gradient(to right bottom, rgba($color-secondary-dark, 0.701),rgba($color-tertiary-dark, 0.705)) ,url('../../public/images/galeria/galerias/pocitos/pocitos_8.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        height: 770px;  
+        width: 100%;
+        position: relative;
+
+        &__container {
+            display: flex;
+            justify-content: center;
+        }
+        
+        &__logo {
+            height: 25rem; //384px
+            width: 18rem; //288px
+            position: absolute;
+    
+            transform: translate(0%, 50%);
+        }
+    
+        @include button-main;
+    }
+
+    @media screen and(min-width: 430px) and(max-width:649px){
+        background-image: linear-gradient(to right bottom, rgba($color-secondary-dark, 0.701),rgba($color-tertiary-dark, 0.705)) ,url('../../public/images/galeria/galerias/pocitos/pocitos_8.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        height: 800px;  
+        width: 100%;
+        position: relative;
+
+        &__container {
+            display: flex;
+            justify-content: center;
+        }
+        
+        &__logo {
+            height: 24rem; //384px
+            width: 17rem; //288px
+            position: absolute;
+    
+            transform: translate(0%, 50%);
+        }
+    
+        @include button-main;
+    }
+}

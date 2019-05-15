@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="es-MX">
+<head>
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#3C484E">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="{% static 'src/css/style.css' %}" type="text/css">
+    <!-- Favicon -->
+    <link rel="icon" href="{% static 'public/images/logo.png' %}">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
+    <!-- CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+
+    <title>El Pinche Grabador | Puntos de Venta</title>
+</head>
+<body>
+
+    <div class="nave" id="top">
+        <input type="checkbox" class="nave__checkbox" id="navi-toggle">
+        <label for="navi-toggle" class="nave__button">
+            <span class="nave__icon">&nbsp;</span>
+        </label>
+
+        <div class="nave__background">&nbsp;</div>
+
+        <header class="nave__navig">
+            <ul class="nave__list">
+                <li class="nave__item"><a href="{% url 'home' %}" class="nave__link">INICIO</a></li>
+                <li class="nave__item"><a href="{% url 'gallery' %}" class="nave__link">GALERÍA</a></li>
+                <li class="nave__item"><a href="{% url 'blog' %}" class="nave__link">BLOG</a></li>
+                <li class="nave__item"><a href="{% url 'about' %}" class="nave__link">SOBRE MÍ</a></li>
+                <li class="nave__item"><a href="{% url 'points' %}" class="nave__link">PUNTOS DE VENTA</a></li>
+                <li class="nave__item"><a href="{% url 'form' %}" class="nave__link">Contácto</a></li>
+            </ul>
+        </header>
+    </div>
+
+    <div class="puntos BananaEffect-2">
+        <h2 class="puntos__title">GUANAJUATO - 'Pocitos 77'</h2>
+        <p class="puntos__desc">Pocitos 77, Guanajuato, GTO, 36000, México.</p>
+        <p class="puntos__cat">Taller + Galería + Tienda</p>
+
+
+        <div id="demo" class="carousel slide carousel_jeje" data-ride="carousel" style="margin-top: 2rem;">
+
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                  <li data-target="#demo" data-slide-to="0" class="active"></li>
+                  <li data-target="#demo" data-slide-to="1"></li>
+                  <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+                
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="carousel-item-img" src="{% static 'public/images/galeria/galerias/pocitos/pocitos_1.jpg' %}" alt="Taller 1">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="carousel-item-img" src="{% static 'public/images/galeria/galerias/pocitos/pocitos_2.jpg' %}" alt="Taller 2">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="carousel-item-img" src="{% static 'public/images/galeria/galerias/pocitos/pocitos_6.jpg' %}" alt="Taller 2">
+                    </div>
+                </div>
+                
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </a>
+              </div>
+    </div>
+
+
+    <div class="puntos BananaEffect-2">
+            <h2 class="puntos__title">GUANAJUATO - 'San Roque 5'</h2>
+            <p class="puntos__desc">Plazuela San Roque 5, Guanajuato, GTO, México.</p>
+            <p class="puntos__cat">Galería + Tienda</p>
+    
+    
+            <div id="demo-2" class="carousel slide carousel_jeje" data-ride="carousel" style="margin-top: 2rem;">
+    
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                      <li data-target="#demo-2" data-slide-to="0" class="active"></li>
+                      <li data-target="#demo-2" data-slide-to="1"></li>
+                      <li data-target="#demo-2" data-slide-to="2"></li>
+                    </ul>
+                    
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="carousel-item-img" src="{% static 'public/images/galeria/galerias/san_roque/SAN_ROQUE_3.jpg' %}" alt="Taller 1">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="carousel-item-img" src="{% static 'public/images/galeria/galerias/san_roque/SAN_ROQUE_2.jpg' %}" alt="Taller 2">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="carousel-item-img" src="{% static 'public/images/galeria/galerias/san_roque/SAN_ROQUE.JPG' %}" alt="Taller 2">
+                        </div>
+                    </div>
+                    
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo-2" data-slide="prev">
+                      <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo-2" data-slide="next">
+                      <span class="carousel-control-next-icon"></span>
+                    </a>
+                  </div>
+        </div>
+
+
+        <div class="puntos BananaEffect-2">
+                <h2 class="puntos__title">SAN MIGUEL DE ALLENDE - 'Zacateros 28'</h2>
+                <p class="puntos__desc">Zacateros 28, San Miguel de Allende, Guanajuato, México.</p>
+                <p class="puntos__cat">Taller + Galería + Tienda</p>
+        
+        
+                <div id="demo-3" class="carousel slide carousel_jeje" data-ride="carousel" style="margin-top: 2rem;">
+        
+                        <!-- Indicators -->
+                        <ul class="carousel-indicators">
+                          <li data-target="#demo-3" data-slide-to="0" class="active"></li>
+                          <li data-target="#demo-3" data-slide-to="1"></li>
+                          <li data-target="#demo-3" data-slide-to="2"></li>
+                        </ul>
+                        
+                        <!-- The slideshow -->
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img class="carousel-item-img" src="{% static 'public/images/galeria/galerias/san_miguel/GALERIA_SMA.jpg' %}" alt="Taller 1">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="carousel-item-img" src="{% static 'public/images/galeria/galerias/san_miguel/GALERIA_SMA_2.jpg' %}" alt="Taller 2">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="carousel-item-img" src="{% static 'public/images/galeria/galerias/san_miguel/GALERIA_SMA_3.jpg' %}" alt="Taller 2">
+                            </div>
+                        </div>
+                        
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev" href="#demo-3" data-slide="prev">
+                          <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#demo-3" data-slide="next">
+                          <span class="carousel-control-next-icon"></span>
+                        </a>
+                      </div>
+            </div>
+
+            
+            <div class="puntos BananaEffect-2">
+                    <h2 class="puntos__title">OAXACA GRÁFICO</h2>
+                    <p class="puntos__desc">Macedonio Alcalá #503 Centro, Oaxaca, Oaxaca.</p>
+                    <p class="puntos__cat">Galería + Tienda</p>
+            
+            
+                    <div id="demo-4" class="carousel slide  carousel_jeje" data-ride="carousel" style="margin-top: 2rem;">
+            
+                            <!-- Indicators -->
+                            <ul class="carousel-indicators">
+                              <li data-target="#demo-4" data-slide-to="0" class="active"></li>
+                              <li data-target="#demo-4" data-slide-to="1"></li>
+                            </ul>
+                            
+                            <!-- The slideshow -->
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img class="carousel-item-img" src="{% static 'public/images/galeria/galerias/oaxaca/OAXACA GRAFICO 1.jpg' %}" alt="Taller 1">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="carousel-item-img" src="{% static 'public/images/galeria/galerias/oaxaca/OAXACA GRAFICO 2.jpg' %}" alt="Taller 2">
+                              </div>
+                            </div>
+                            
+                            <!-- Left and right controls -->
+                            <a class="carousel-control-prev" href="#demo-4" data-slide="prev">
+                              <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#demo-4" data-slide="next">
+                              <span class="carousel-control-next-icon"></span>
+                            </a>
+                          </div>
+                </div>
+
+    <div class="about__buttons BananaEffect-2">
+            <a class="about__buttons-anchor-1" href="{% url 'about' %}">
+                <button class="about__buttons-1">SOBRE MI</button>
+            </a>
+            
+            <a class="about__buttons-anchor-2" href="{% url 'gallery' %}">
+                <button class="about__buttons-2">GALERIA 
+                </button>
+            </a>
+        </div>
+
+        <footer class="footer_content">
+            <div class="footer_content-social">
+                <a href="https://www.instagram.com/elpinchegrabador/"><img class="footer_content-social-1" src="{% static 'public/images/instagram_logo.svg' %}" alt="instagram"></a>
+                <a href="https://www.facebook.com/Taller-elpinchegrabador-858101250939661/"><img class="footer_content-social-1" src="{% static 'public/images/facebook_logo.svg' %}" alt="facebook"></a>
+                <a href="{% url 'form' %}"><img class="footer_content-social-1" src="{% static 'public/images/email.svg' %}" alt="e-mail"></a>
+            </div>
+
+            <div class="footer_content-contact">
+                <p class="footer_content-contact-1">elpinchegrabador@gmail.com</p>
+            </div>
+
+            <div class="footer_content-logo">
+                <img class="footer_content-logo__image" src="{% static 'public/images/logo.png' %}">
+            </div>
+
+            <div class="footer_content-text">
+                <small class="footer_content-text__desc">©El Pinche Grabador, 2019</small>
+            </div>
+
+            <a class="footer_content-button" href="#top">
+                <button class="footer_content-button-1">
+                    IR A INICIO &nbsp; 
+                    <img class="footer_content-button-1-arrow" src="{% static 'public/images/down_arrow.png' %}" alt="up_arrow"/>
+                </button>
+            </a> 
+        </footer>
+
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
