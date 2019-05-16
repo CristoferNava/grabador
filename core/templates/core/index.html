@@ -62,11 +62,11 @@
             </span>
         </h2>
 
-        <video class="responsive-video BananaEffect" controls loop>
+        <video class="responsive-video BananaEffect-2" controls loop>
             <source  src="{% static 'public/images/elpinchegrabador.mp4' %}" type="video/mp4">
         </video>
 
-        <div class="bannerOne-buttons">
+        <div class="bannerOne-buttons BananaEffect">
             <a class="bannerOne-buttons-anchor-1" href="{% url 'about' %}">
                 <button class="bannerOne-buttons-1">SOBRE MÍ</button>
             </a>
@@ -82,7 +82,7 @@
 
     <div class="grid_container" id="grid_img">
         <div class="container">
-            <div class="row">
+            <div class="row BananaEffect-2">
                 {% for picture in pictures %}
                 <div class="col s6 m6 l3">
                 
@@ -137,7 +137,7 @@
             -->
         </div>
 
-                <div class="bannerTwo-buttons">
+                <div class="bannerTwo-buttons BananaEffect-2">
                         <form class="bannerOne-buttons-anchor-1" action="{% url 'gallery' %}" method="get">
                             <button class="bannerTwo-buttons-1">EXPLORAR</button>
                         </form>
@@ -148,7 +148,7 @@
                         </form>
                     </div>
 
-                        <div id="banner-3" class="bannerThree" style="margin-top: 18rem;">
+                        <div id="banner-3" class="bannerThree BananaEffect-2" style="margin-top: 18rem;">
                             <!-- <div class="bannerContainer"> -->
                             {% for article in articles %}
                                 {% if forloop.counter0 < 3 %}
@@ -166,7 +166,7 @@
                                     {% if forloop.first %}<div class="card__category"><a href="{% url 'article' article.id article.title|slugify %}">Nuevo</a></div>{% endif %}
                                     <h2 class="card__title"><a href="{% url 'article' article.id article.title|slugify %}">{{ article.title }}</a></h2>
                                     <div class="card__subtitle">{{ article.subtitle }}</div>
-                                    <p class="card__description">{{ article.short_description|safe }}</p>
+                                    <p class="card__description"> {{ article.short_description|safe|slice:":45" }}</p>
                                   </div>
                                   
                                   <footer class="card__footer">
@@ -221,7 +221,7 @@
                             <!-- </div> -->
                         </div>
 
-                        <form class="blog" action="{% url 'blog' %}" method="get">
+                        <form class="blog BananaEffect-2" action="{% url 'blog' %}" method="get">
                             <button class="blog__button">PUBLICACIONES</button>
                         </form> 
             

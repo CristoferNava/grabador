@@ -51,8 +51,40 @@
 
             <div class="article__content">
                 <!--<p class="article__content-text">-->
-                   {{ article.content|safe }}
+                   {{ article.first_paragraph|safe }}
             </div>
+
+            {% if article.first_image %}
+            <div class="article__content-pic">
+                <img class="article__content-pic-format" src="{{ article.first_image.url }}">    
+            </div>
+            {% endif %}
+
+            {% if article.second_paragraph %}
+            <div class="article__content">
+                <!--<p class="article__content-text">-->
+                   {{ article.second_paragraph|safe }}
+            </div>
+            {% endif %}
+
+            {% if article.second_image %}
+            <div class="article__content-pic">
+                <img class="article__content-pic-format" src="{{ article.second_image.url }}">
+            </div>
+            {% endif %}
+
+            {% if article.third_paragraph %}
+            <div class="article__content">
+                <!--<p class="article__content-text">-->
+                   {{ article.third_paragraph|safe }}
+            </div>
+            {% endif %}
+
+            {% if article.third_image %}
+            <div class="article__content-pic">
+                <img class="article__content-pic-format" src="{{ article.third_image.url }}">
+            </div>
+            {% endif %}
 
 
 

@@ -37,8 +37,9 @@
 
     <div id="blog__zone"></div>
     
-    {% for article in blogs %}
+    
     <div id="banner-3" class="blog-enable BananaEffect-2" style="margin-top: 17rem;">
+        {% for article in blogs %}       
         <article class="card">
             <header class="card__thumb">
                 <a href="{% url 'article' article.id article.title|slugify %}"><img src="{{ article.image.url }}" alt="article"/></a>
@@ -53,17 +54,17 @@
                 {% if forloop.first %}<div class="card__category"><a href="{% url 'article' article.id article.title|slugify %}">Nuevo</a></div>{% endif %}
                 <h2 class="card__title"><a href="{% url 'article' article.id article.title|slugify %}">{{ article.title }}</a></h2>
                 <div class="card__subtitle">{{ article.subtitle }}</div>
-                    <p class="card__description">
-                        {{ article.short_description|safe }}
-                    </p>
+                    <p class="card__description">{{ article.short_description|safe|slice:":45" }}</p>
                 </div>
-                    
+
+
                 <footer class="card__footer">
-                    <span class="icon ion-chatbox"></span>Por: {{ article.author }}
+                <span class="icon ion-chatbox"></span>Por: {{ article.author }}
                 </footer>
         </article>
+        {% endfor %}
     </div>
-    {% endfor %}
+   
     
 
     <footer class="footer_content">

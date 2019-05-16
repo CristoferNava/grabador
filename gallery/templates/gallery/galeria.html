@@ -43,15 +43,17 @@
     <div class="container">
 
         <!--Este Row se renderiza para generar conuntos de imagenes en distintos rows-->
-            {% for picture in pictures %}
+            
             <div class="row BananaEffect-2">
+            {% for picture in pictures %}
                 <div class="col s6 m6 l3 xl3">
                     <a href="{% url 'picture' picture.id picture.title|slugify %}">
                         <img class="One-elements" src="{{ picture.image.url }}"/>
                     </a> 
                 </div>
+             {% endfor %}
             </div>
-            {% endfor %}
+           
     </div>
 
             <footer class="footer_content">
