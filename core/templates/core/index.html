@@ -84,6 +84,7 @@
         <div class="container">
             <div class="row BananaEffect-2">
                 {% for picture in pictures %}
+                    {% comment %} {% endcomment %}
                     {% if forloop.counter0 < 8 %}
                     <div class="col s6 m6 l3">
                         <a href="{% url 'picture' picture.id picture.title|slugify %}">
@@ -91,6 +92,7 @@
                         </a> 
                     </div>
                     {% endif %}
+                    {% comment %}{% endcomment %}
                 {% endfor %}
             </div>
             
