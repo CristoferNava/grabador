@@ -84,12 +84,13 @@
         <div class="container">
             <div class="row BananaEffect-2">
                 {% for picture in pictures %}
-                <div class="col s6 m6 l3">
-                
-                    <a href="{% url 'picture' picture.id picture.title|slugify %}">
-                        <img  class="one-elements" src="{{ picture.image.url }}" alt="galery_element"/>
-                    </a> 
-                </div>
+                    {% if forloop.counter0 < 8 %}
+                    <div class="col s6 m6 l3">
+                        <a href="{% url 'picture' picture.id picture.title|slugify %}">
+                            <img  class="one-elements" src="{{ picture.image.url }}" alt="galery_element"/>
+                        </a> 
+                    </div>
+                    {% endif %}
                 {% endfor %}
             </div>
             
