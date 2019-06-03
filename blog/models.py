@@ -14,14 +14,16 @@ class Article(models.Model):
     third_image = models.ImageField(upload_to='blog', blank=True, null=True, verbose_name='Tercera imagen imagen (opcional)')
     day = models.CharField(max_length=2, verbose_name='Día')
     month = models.CharField(max_length=15, verbose_name='Mes')
+    year = models.CharField(max_length=10, null=True, verbose_name="Año")
     author = models.CharField(max_length=100, verbose_name='Autor')
+    order = models.SmallIntegerField(default=0, null=True, verbose_name='Orden')
     created = models.DateTimeField(auto_now_add=True, verbose_name='Fecha de creación')
     updated = models.DateTimeField(auto_now=True, verbose_name='Fecha de modificación')
 
     class Meta:
         verbose_name = 'Artículo'
         verbose_name_plural = 'Artículos'
-        ordering = ['-created']
+        ordering = ['order']
 
     def __str__(self):
         return self.title
