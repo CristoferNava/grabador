@@ -5,7 +5,7 @@
 body {
   font-family: "Open Sans";
   font-size: 1rem;
-   background-color: #eee;
+  background-color: #eee;
 }
 
 /**
@@ -30,7 +30,7 @@ body {
   transform : translateX(-50%) translateY(-50%) translateZ(0);
   margin-top: 2rem;
   
-  width: 23.125rem;//370px;
+  width: 22rem;
   
   background-color: #fff;
   box-shadow:0 0 20px rgba(black,0.1);
@@ -57,7 +57,7 @@ body {
     transform : translateX(-50%) translateY(-50%) translateZ(0);
     margin-top: 2rem;
     
-    width: 21rem;//370px;
+    width: 21rem;//402px;
     
     background-color: #fff;
     box-shadow:0 0 20px rgba(black,0.1);
@@ -178,7 +178,7 @@ body {
 **/
 
 .card__thumb{
-  height: 15.3125rem;//245px;
+  height: 245px;//245px;
   
   overflow:hidden;
   
@@ -189,6 +189,9 @@ body {
   img{
     display:block;
     opacity: 1;
+
+    width: 400px;
+    height: 245px;
     
     transform: scale(1);
     
@@ -196,13 +199,46 @@ body {
   }
   
   .card:hover &{
-    height: 8.125rem;//130px;
+    height: 3.125rem;//130px;
   }
 }
 
 .card:hover .card-blog__thumb img{
   opacity: 0.6;
   transform: scale(1.2);
+}
+
+@media(min-width: 900px){
+  .card__thumb{
+    height: 245px;//245px;
+    
+    overflow:hidden;
+    
+    background-color: #000;
+    
+    transition: height $duration;
+    
+    img{
+      display:block;
+      opacity: 1;
+  
+      width: 650px;
+      height: 400px;
+      
+      transform: scale(1);
+      
+      transition: opacity $duration, transform $duration;
+    }
+    
+    .card:hover &{
+      height: 3.125rem;//130px;
+    }
+  }
+
+  .card:hover .card-blog__thumb img{
+    opacity: 0.6;
+    transform: scale(1.2);
+  }
 }
 
 
@@ -212,14 +248,14 @@ body {
 
 .card__body{
   position: relative;
-  height: 11.5625rem;//185px;
+  height: 13.5625rem;//185px;
   
   padding: 1.25rem;//20px;
   
   transition: height $duration;
   
   .card:hover &{
-    height: 11.5625rem + 7.1875rem; //185px + 115px;
+    height: 13.5625rem + 5.1875rem; //185px + 115px;
   }
 }
 
