@@ -4087,10 +4087,10 @@ body {
     .bannerThree .card {
       position: relative;
       top: 50%;
-      left: 10%;
+      left: 7%;
       transform: translateX(0%) translateY(-50%) translateZ(0);
-      width: 21.125rem;
-      height: 27rem;
+      width: 23rem;
+      height: 30rem;
       background-color: #fff;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
       border-radius: 6px;
@@ -4103,10 +4103,10 @@ body {
     .bannerThree .card {
       position: relative;
       top: 50%;
-      left: 15%;
+      left: 7.5%;
       transform: translateX(0%) translateY(-50%) translateZ(0);
-      width: 21.125rem;
-      height: 27rem;
+      width: 25rem;
+      height: 32rem;
       background-color: #fff;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
       border-radius: 6px;
@@ -4565,8 +4565,8 @@ body {
 
 .nave__button {
   background-color: white;
-  height: 4rem;
-  width: 4rem;
+  height: 4.6rem;
+  width: 4.6rem;
   position: fixed;
   top: 2rem;
   right: 1rem;
@@ -4577,8 +4577,8 @@ body {
   cursor: pointer; }
 
 .nave__background {
-  height: 4rem;
-  width: 4rem;
+  height: 4.4rem;
+  width: 4.4rem;
   border-radius: 50%;
   position: fixed;
   top: 2rem;
@@ -4602,7 +4602,7 @@ body {
   position: absolute;
   top: 45%;
   left: 50%;
-  transform: translate(-52%, -50%);
+  transform: translate(-50%, -50%);
   list-style: none;
   text-align: center;
   width: 100%; }
@@ -4639,10 +4639,10 @@ body {
 
 .nave__icon {
   position: relative;
-  margin-top: 2rem; }
+  margin-top: 2.2rem; }
   .nave__icon, .nave__icon::before, .nave__icon::after {
-    width: 2rem;
-    height: 2px;
+    width: 2.5rem;
+    height: 3px;
     background-color: #546e7a;
     display: inline-block; }
   .nave__icon::before, .nave__icon::after {
@@ -5255,7 +5255,7 @@ body {
   left: 50%;
   transform: translateX(-50%) translateY(-50%) translateZ(0);
   margin-top: 2rem;
-  width: 23.125rem;
+  width: 22rem;
   background-color: #fff;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   border-radius: 6px;
@@ -5366,28 +5366,49 @@ body {
 * Míniatura
 **/
 .card__thumb {
-  height: 15.3125rem;
+  height: 245px;
   overflow: hidden;
   background-color: #000;
   transition: height 0.5s; }
   .card__thumb img {
     display: block;
     opacity: 1;
+    width: 400px;
+    height: 245px;
     transform: scale(1);
     transition: opacity 0.5s, transform 0.5s; }
   .card:hover .card__thumb {
-    height: 8.125rem; }
+    height: 3.125rem; }
 
 .card:hover .card-blog__thumb img {
   opacity: 0.6;
   transform: scale(1.2); }
+
+@media (min-width: 900px) {
+  .card__thumb {
+    height: 245px;
+    overflow: hidden;
+    background-color: #000;
+    transition: height 0.5s; }
+    .card__thumb img {
+      display: block;
+      opacity: 1;
+      width: 650px;
+      height: 400px;
+      transform: scale(1);
+      transition: opacity 0.5s, transform 0.5s; }
+    .card:hover .card__thumb {
+      height: 3.125rem; }
+  .card:hover .card-blog__thumb img {
+    opacity: 0.6;
+    transform: scale(1.2); } }
 
 /**
 * BODY
 **/
 .card__body {
   position: relative;
-  height: 11.5625rem;
+  height: 13.5625rem;
   padding: 1.25rem;
   transition: height 0.5s; }
   .card:hover .card__body {
