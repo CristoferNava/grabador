@@ -51,6 +51,11 @@
                         <img class="One-elements" src="{{ picture.image.url }}"/>
                     </a> 
                 </div>
+
+                {% if forloop.counter|divisibleby:"4" and not forloop.last %}
+                 </div><div class="row BananaEffect-2">   
+                {% endif %}
+
              {% endfor %}
             </div>
            
