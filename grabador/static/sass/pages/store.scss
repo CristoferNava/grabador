@@ -2,13 +2,21 @@
     margin-top: 2rem;
     padding: 0 1rem;
 
+    &__img-cont{
+        display: flex;
+        justify-content: center;
+        
+        height: auto;
+        width: auto;
+    }
+
     &__img{
         display: flex;
         justify-content: flex-start;
-        
-        height: 350px;
-        width: 220px;
         border-radius: 5px;
+
+        height: 75%;
+        width: 75%;
     } 
 
     &__content {
@@ -90,18 +98,16 @@
         &__img-cont{
             display: flex;
             justify-content: center;
+
+            height: auto;
+            width: auto;
         }
     
         &__img{
             
-            height: 440px;
-            width: 320px;
+            height: 24%;
+            width: 24%;
             border-radius: 5px;
-
-            &:hover {
-                -webkit-filter: blur(1px);
-                filter: blur(1px);
-            }
         } 
     
         &__content {

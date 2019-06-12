@@ -921,16 +921,17 @@ body {
     font-size: 1.2rem;
     font-family: 'Poppins', sans-serif;
     text-align: left;
+    hyphens: auto;
     padding: 0 1rem 0 1rem;
-    margin-top: 6rem;
+    margin-top: 7rem;
     position: absolute; }
     .bannerOne__title-artist {
       color: #ffea00;
-      margin-top: 4rem;
+      margin-top: 5.5rem;
       display: flex;
       justify-content: flex-start; }
       .bannerOne__title-artist-sign {
-        width: 320px;
+        width: 325px;
         height: 70px; }
   .bannerOne .responsive-video {
     display: flex;
@@ -1177,7 +1178,7 @@ body {
         margin-top: 5rem;
         position: absolute; }
         .bannerOne__title-artist {
-          margin-top: 2rem;
+          margin-top: 4rem;
           display: flex;
           justify-content: flex-start; }
           .bannerOne__title-artist-sign {
@@ -1185,7 +1186,7 @@ body {
             height: 200px; }
       .bannerOne .responsive-video {
         display: inline-block;
-        margin-top: 40rem;
+        margin-top: 42rem;
         margin-left: 30rem; }
       .bannerOne-buttons {
         display: flex;
@@ -1429,7 +1430,7 @@ body {
         margin-top: 4rem;
         position: absolute; }
         .bannerOne__title-artist {
-          margin-top: 2rem;
+          margin-top: 4rem;
           display: flex;
           justify-content: flex-start; }
           .bannerOne__title-artist-sign {
@@ -1437,7 +1438,7 @@ body {
             height: 150px; }
       .bannerOne .responsive-video {
         display: inline-block;
-        margin-top: 18rem;
+        margin-top: 21rem;
         margin-left: 15rem; }
       .bannerOne-buttons {
         display: flex;
@@ -1681,7 +1682,7 @@ body {
         margin-top: 4rem;
         position: absolute; }
         .bannerOne__title-artist {
-          margin-top: 2rem;
+          margin-top: 4rem;
           display: flex;
           justify-content: flex-start; }
           .bannerOne__title-artist-sign {
@@ -1689,7 +1690,7 @@ body {
             height: 150px; }
       .bannerOne .responsive-video {
         display: inline-block;
-        margin-top: 40rem;
+        margin-top: 41rem;
         margin-left: 10rem; }
       .bannerOne-buttons {
         display: flex;
@@ -1937,7 +1938,7 @@ body {
         margin-top: 4rem;
         position: absolute; }
         .bannerOne__title-artist {
-          margin-top: 2rem;
+          margin-top: 4rem;
           display: flex;
           justify-content: flex-start; }
           .bannerOne__title-artist-sign {
@@ -1945,7 +1946,7 @@ body {
             height: 150px; }
       .bannerOne .responsive-video {
         display: inline-block;
-        margin-top: 18rem; }
+        margin-top: 19rem; }
       .bannerOne-buttons {
         display: flex;
         justify-content: center;
@@ -2185,10 +2186,10 @@ body {
         font-family: 'Poppins', sans-serif;
         text-align: left;
         padding: 0 3rem 0 3rem;
-        margin-top: 3rem;
+        margin-top: 4rem;
         position: absolute; }
         .bannerOne__title-artist {
-          margin-top: 2rem;
+          margin-top: 3rem;
           display: flex;
           justify-content: flex-start; }
           .bannerOne__title-artist-sign {
@@ -2196,7 +2197,7 @@ body {
             height: 85px; }
       .bannerOne .responsive-video {
         display: inline-block;
-        margin-top: 10rem;
+        margin-top: 12rem;
         margin-left: 15rem;
         width: 800px;
         height: 515px; }
@@ -2439,10 +2440,10 @@ body {
         font-family: 'Poppins', sans-serif;
         text-align: left;
         padding: 0 3rem 0 3rem;
-        margin-top: 3rem;
+        margin-top: 4rem;
         position: absolute; }
         .bannerOne__title-artist {
-          margin-top: 2rem;
+          margin-top: 3rem;
           display: flex;
           justify-content: flex-start; }
           .bannerOne__title-artist-sign {
@@ -2450,7 +2451,7 @@ body {
             height: 85px; }
       .bannerOne .responsive-video {
         display: inline-block;
-        margin-top: 9rem;
+        margin-top: 11rem;
         margin-left: 10rem;
         width: 800px;
         height: 515px; }
@@ -2693,10 +2694,10 @@ body {
         font-family: 'Poppins', sans-serif;
         text-align: left;
         padding: 0 3.5rem 0 3.5rem;
-        margin-top: 3rem;
+        margin-top: 4rem;
         position: absolute; }
         .bannerOne__title-artist {
-          margin-top: 3rem;
+          margin-top: 4rem;
           display: flex;
           justify-content: flex-start; }
           .bannerOne__title-artist-sign {
@@ -2948,10 +2949,10 @@ body {
         font-family: 'Poppins', sans-serif;
         text-align: left;
         padding: 0 3.5rem 0 3.5rem;
-        margin-top: 3rem;
+        margin-top: 4rem;
         position: absolute; }
         .bannerOne__title-artist {
-          margin-top: 3rem;
+          margin-top: 4rem;
           display: flex;
           justify-content: flex-start; }
           .bannerOne__title-artist-sign {
@@ -3203,10 +3204,10 @@ body {
         font-family: 'Poppins', sans-serif;
         text-align: left;
         padding: 0 3.5rem 0 3.5rem;
-        margin-top: 3rem;
+        margin-top: 4rem;
         position: absolute; }
         .bannerOne__title-artist {
-          margin-top: 3rem;
+          margin-top: 4rem;
           display: flex;
           justify-content: flex-start; }
           .bannerOne__title-artist-sign {
@@ -3685,10 +3686,10 @@ body {
         font-family: 'Poppins', sans-serif;
         text-align: left;
         padding: 0 3.5rem 0 3.5rem;
-        margin-top: 3rem;
+        margin-top: 4rem;
         position: absolute; }
         .bannerOne__title-artist {
-          margin-top: 3rem;
+          margin-top: 4rem;
           display: flex;
           justify-content: flex-start; }
           .bannerOne__title-artist-sign {
@@ -5639,12 +5640,17 @@ body {
 .product {
   margin-top: 2rem;
   padding: 0 1rem; }
+  .product__img-cont {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: auto; }
   .product__img {
     display: flex;
     justify-content: flex-start;
-    height: 350px;
-    width: 220px;
-    border-radius: 5px; }
+    border-radius: 5px;
+    height: 75%;
+    width: 75%; }
   .product__content {
     padding: 0 1rem;
     display: flex;
@@ -5701,14 +5707,13 @@ body {
     padding: 0 1rem; }
     .product__img-cont {
       display: flex;
-      justify-content: center; }
+      justify-content: center;
+      height: auto;
+      width: auto; }
     .product__img {
-      height: 440px;
-      width: 320px;
+      height: 24%;
+      width: 24%;
       border-radius: 5px; }
-      .product__img:hover {
-        -webkit-filter: blur(1px);
-        filter: blur(1px); }
     .product__content {
       padding: 0 1rem;
       display: flex;

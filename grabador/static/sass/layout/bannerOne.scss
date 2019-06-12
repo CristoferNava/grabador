@@ -14,19 +14,20 @@
         font-size: 1.2rem; //21.6px
         font-family: 'Poppins', sans-serif;
         text-align: left;
+        hyphens: auto;
         
         padding: 0 1rem 0 1rem;
-        margin-top: 6rem; //96px
+        margin-top: 7rem; //114px
         position: absolute;
 
         &-artist {
             color: $color-yellow;
-            margin-top: 4rem; //64px
+            margin-top: 5.5rem; //88px
             display: flex;
             justify-content: flex-start;
 
             &-sign {
-                width: 320px;
+                width: 325px;
                 height: 70px;
             }
         }
@@ -102,7 +103,7 @@
             position: absolute;
 
         &-artist {
-            margin-top: 2rem; //64px
+            margin-top: 4rem; 
             display: flex;
             justify-content: flex-start;
 
@@ -115,7 +116,7 @@
 
     .responsive-video{
         display: inline-block;
-        margin-top: 40rem;
+        margin-top: 42rem;
         margin-left: 30rem;
     }
 
@@ -180,7 +181,7 @@
             position: absolute;
 
         &-artist {
-            margin-top: 2rem; //64px
+            margin-top: 4rem; 
             display: flex;
             justify-content: flex-start;
 
@@ -193,7 +194,7 @@
 
     .responsive-video{
         display: inline-block;
-        margin-top: 18rem;
+        margin-top: 21rem;
         margin-left: 15rem;
     }
 
@@ -258,7 +259,7 @@
             position: absolute;
 
         &-artist {
-            margin-top: 2rem; //64px
+            margin-top: 4rem; 
             display: flex;
             justify-content: flex-start;
 
@@ -271,7 +272,7 @@
 
     .responsive-video{
         display: inline-block;
-        margin-top: 40rem;
+        margin-top: 41rem;
         margin-left: 10rem;
     }
     
@@ -339,11 +340,11 @@
             text-align: left;
         
             padding: 0 5rem 0 5rem;
-            margin-top: 4rem; //96px
+            margin-top: 4rem; //114px
             position: absolute;
 
         &-artist {
-            margin-top: 2rem; //64px
+            margin-top: 4rem; 
             display: flex;
             justify-content: flex-start;
 
@@ -356,7 +357,7 @@
 
     .responsive-video{
         display: inline-block;
-        margin-top: 18rem;
+        margin-top: 19rem;
     }
 
     &-buttons {
@@ -416,11 +417,11 @@
             text-align: left;
         
             padding: 0 3rem 0 3rem;
-            margin-top: 3rem; //96px
+            margin-top: 4rem; //114px
             position: absolute;
 
         &-artist {
-            margin-top: 2rem; //64px
+            margin-top: 3rem; //80px
             display: flex;
             justify-content: flex-start;
 
@@ -433,7 +434,7 @@
 
     .responsive-video{
         display: inline-block;
-        margin-top: 10rem;
+        margin-top: 12rem;
         margin-left: 15rem;
 
         width: 800px;
@@ -497,11 +498,11 @@
             text-align: left;
         
             padding: 0 3rem 0 3rem;
-            margin-top: 3rem; //96px
+            margin-top: 4rem; //114px
             position: absolute;
 
         &-artist {
-            margin-top: 2rem; //64px
+            margin-top: 3rem; //80px
             display: flex;
             justify-content: flex-start;
 
@@ -514,7 +515,7 @@
 
     .responsive-video {
         display: inline-block;
-        margin-top: 9rem;
+        margin-top: 11rem;
         margin-left: 10rem;
     
         width: 800px;
@@ -577,11 +578,11 @@
         text-align: left;
     
         padding: 0 3.5rem 0 3.5rem;
-        margin-top: 3rem; //96px
+        margin-top: 4rem; //114px
         position: absolute;
 
     &-artist {
-        margin-top: 3rem; //64px
+        margin-top: 4rem; //80px
         display: flex;
         justify-content: flex-start;
 
@@ -659,11 +660,11 @@
             text-align: left;
         
             padding: 0 3.5rem 0 3.5rem;
-            margin-top: 3rem; //96px
+            margin-top: 4rem; //114px
             position: absolute;
 
         &-artist {
-            margin-top: 3rem; //64px
+            margin-top: 4rem; //80px
             display: flex;
             justify-content: flex-start;
 
@@ -740,11 +741,11 @@
             text-align: left;
         
             padding: 0 3.5rem 0 3.5rem;
-            margin-top: 3rem; //96px
+            margin-top: 4rem; //114px
             position: absolute;
 
         &-artist {
-            margin-top: 3rem; //64px
+            margin-top: 4rem; //80px
             display: flex;
             justify-content: flex-start;
 
@@ -863,11 +864,11 @@
         text-align: left;
     
         padding: 0 3.5rem 0 3.5rem;
-        margin-top: 3rem; //96px
+        margin-top: 4rem; //114px
         position: absolute;
 
     &-artist {
-        margin-top: 3rem; //64px
+        margin-top: 4rem; //80px
         display: flex;
         justify-content: flex-start;
 
