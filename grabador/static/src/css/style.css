@@ -1435,7 +1435,8 @@ body {
           justify-content: flex-start; }
           .bannerOne__title-artist-sign {
             width: 750px;
-            height: 150px; }
+            height: 150px;
+            margin-left: 700px; }
       .bannerOne .responsive-video {
         display: inline-block;
         margin-top: 21rem;
@@ -1687,7 +1688,8 @@ body {
           justify-content: flex-start; }
           .bannerOne__title-artist-sign {
             width: 750px;
-            height: 150px; }
+            height: 150px;
+            margin-left: 700px; }
       .bannerOne .responsive-video {
         display: inline-block;
         margin-top: 41rem;
@@ -1943,7 +1945,8 @@ body {
           justify-content: flex-start; }
           .bannerOne__title-artist-sign {
             width: 750px;
-            height: 150px; }
+            height: 150px;
+            margin-left: 600px; }
       .bannerOne .responsive-video {
         display: inline-block;
         margin-top: 19rem; }
@@ -2194,7 +2197,8 @@ body {
           justify-content: flex-start; }
           .bannerOne__title-artist-sign {
             width: 500px;
-            height: 85px; }
+            height: 85px;
+            margin-left: 350px; }
       .bannerOne .responsive-video {
         display: inline-block;
         margin-top: 12rem;
@@ -2440,15 +2444,17 @@ body {
         font-family: 'Poppins', sans-serif;
         text-align: left;
         padding: 0 3rem 0 3rem;
-        margin-top: 4rem;
+        margin-top: 2rem;
         position: absolute; }
         .bannerOne__title-artist {
-          margin-top: 3rem;
+          margin-top: 2.6rem;
           display: flex;
-          justify-content: flex-start; }
+          justify-content: flex-start;
+          margin-left: 2rem; }
           .bannerOne__title-artist-sign {
             width: 500px;
-            height: 85px; }
+            height: 85px;
+            margin-left: 500px; }
       .bannerOne .responsive-video {
         display: inline-block;
         margin-top: 11rem;
@@ -5255,7 +5261,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%) translateZ(0);
-  margin-top: 2rem;
+  margin-top: 4rem;
   width: 22rem;
   background-color: #fff;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -5347,7 +5353,7 @@ body {
   padding: 1.25rem;
   transition: height 0.5s; }
   .card:hover .card__body {
-    height: 18.75rem; }
+    height: 12.75rem; }
 
 .card__title {
   margin: 0;
@@ -5413,7 +5419,7 @@ body {
   padding: 1.25rem;
   transition: height 0.5s; }
   .card:hover .card__body {
-    height: 18.75rem; }
+    height: 15.75rem; }
 
 .card__category {
   position: absolute;
