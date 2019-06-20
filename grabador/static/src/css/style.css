@@ -5219,9 +5219,7 @@ body {
   max-height: 100%;
   border-radius: 0.32rem; }
   .One-elements:hover {
-    -webkit-filter: blur(2px);
-    /* Safari */
-    filter: blur(2px); }
+    border: solid #FA6762 8px; }
 
 .Two {
   grid-column: 4/7;
@@ -5231,9 +5229,7 @@ body {
     max-height: 100%;
     border-radius: 0.32rem; }
     .Two-elements:hover {
-      -webkit-filter: blur(2px);
-      /* Safari */
-      filter: blur(2px); }
+      border: solid #FA6762 8px; }
 
 * {
   box-sizing: border-box; }
@@ -5261,8 +5257,9 @@ body {
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%) translateZ(0);
-  margin-top: 4rem;
+  margin-top: 6rem;
   width: 22rem;
+  height: auto;
   background-color: #fff;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   border-radius: 6px;
@@ -5290,7 +5287,14 @@ body {
     transition: box-shadow 0.5s; }
     .card a {
       color: inherit;
-      text-decoration: none; } }
+      text-decoration: none; }
+  .card__body {
+    position: relative;
+    height: 10.5625rem;
+    padding: 1.25rem;
+    transition: height 0.5s; }
+    .card:hover .card__body {
+      height: 15.75rem; } }
 
 /**
 * FECHA
@@ -5316,7 +5320,7 @@ body {
 
 @media (min-width: 900px) {
   .card {
-    width: 36.5rem; } }
+    width: 38.5rem; } }
 
 /*@media(min-width: 1200px){
     .blog-enable {
@@ -5349,11 +5353,11 @@ body {
   }*/
 .card__body {
   position: relative;
-  height: 13.5625rem;
+  height: 10.5625rem;
   padding: 1.25rem;
   transition: height 0.5s; }
   .card:hover .card__body {
-    height: 12.75rem; }
+    height: 17.75rem; }
 
 .card__title {
   margin: 0;
@@ -5419,7 +5423,7 @@ body {
   padding: 1.25rem;
   transition: height 0.5s; }
   .card:hover .card__body {
-    height: 15.75rem; }
+    height: 22.35rem; }
 
 .card__category {
   position: absolute;
@@ -5457,7 +5461,7 @@ body {
   color: #666C74;
   line-height: 27px;
   opacity: 0;
-  transform: translateY(45px);
+  transform: translateY(-15px);
   transition: opacity 0.3s, transform 0.3s;
   transition-delay: 0s; }
   .card:hover .card__description {
