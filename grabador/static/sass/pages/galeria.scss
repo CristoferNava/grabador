@@ -9,8 +9,7 @@
         border-radius: 0.32rem; //5.12px
 
         &:hover {
-            -webkit-filter: blur(2px); /* Safari */
-            filter: blur(2px);
+            border: solid #FA6762 8px;
         }
     }
 }
@@ -25,8 +24,7 @@
         border-radius: 0.32rem; //5.12px
 
         &:hover {
-            -webkit-filter: blur(2px); /* Safari */
-            filter: blur(2px);
+            border: solid #FA6762 8px;
         }
     }
 }
