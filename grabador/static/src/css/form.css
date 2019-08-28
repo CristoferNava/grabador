@@ -11,11 +11,49 @@ html{
 }
 
 #form-main{
-	width:100%;
-    margin-top: 6rem; 
-		padding-top:0px;
-		display: flex;
-		justify-content: center;
+   width:100%;
+   margin-top: 6rem; 
+   padding-top:0px;
+   display: flex;
+   justify-content: center;
+}
+
+.form-notification {
+	display: flex;
+	margin: -24px 0px 0px 0px;
+	border-radius: 10px 10px 0px 0px;
+	background-color: #2ec680;
+	position: absolute;
+	width: 235px;
+
+	font-family: Helvetica, Arial, sans-serif;
+        font-weight:600;
+	justify-content: center;
+	text-align: center;
+	font-size: 16.5px;
+
+	animation: notification 3s infinite;
+}
+
+@keyframes notification{
+	0% {
+		color: #5d3edc;
+	}
+	20% {
+		color: #429edd;
+	}
+	40% {
+		color: #ee4c19;
+	}
+	60% {
+		color: white;
+	}
+	80% {
+		color: #d045b3;
+	}
+	100% {
+		color: black;
+	}
 }
 
 #form-div {
