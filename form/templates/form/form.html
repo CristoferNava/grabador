@@ -10,14 +10,16 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="{% static 'src/css/style.css' %}" type="text/css">
     <link rel="stylesheet" href="{% static 'src/css/form.css' %}" type="text/css">
+    {% comment %}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    {% endcomment %}
     <!-- Favicon -->
     <link rel="icon" href="{% static 'public/images/mezcal.png' %}">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
 
-    <title>elpinchegrabador | Cóntacto</title>
+    <title>elpinchegrabador | Contacto</title>
 </head>
 <body>
         
@@ -40,25 +42,22 @@
             </ul>
         </header>
     </div>
-
-
     
         <div id="form-main">
+          {% if 'ok' in request.GET %}
             <div class="form-notification"><p>Envío Exitoso  👍</p></div>
+          {% endif %}
                 <div id="form-div">
                   <form class="form" id="form1" method='post'>
                   {% csrf_token %}
                     <p class="name">
                     {{ form.name }}
-                   <!-- <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Nombre" id="name" />-->
                     </p>
                     <p class="email">
                       {{ form.email }}
-                      <!--<input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="E-mail" />-->
                     </p>
                     <p class="text">
                       {{ form.text }}
-                      <!--<textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Escríbenos..."></textarea>-->
                     </p>
                     <div class="submit">
                       <input type="submit" value="ENVIAR" id="button-blue"/>
@@ -66,6 +65,8 @@
                     </div>
                   </form>
                 </div>
+                {% comment %}
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+                {% endcomment %}
 </body>
 </html>

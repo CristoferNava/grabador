@@ -7,8 +7,6 @@ class Contact(models.Model):
     text = models.TextField(verbose_name="Mensaje")
     created = models.DateTimeField(auto_now_add=True, verbose_name='Fecha de contacto')
 
-    #user = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
-
     class Meta:
         verbose_name = "Contacto"
         verbose_name_plural = "Contactos"
