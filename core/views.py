@@ -10,9 +10,6 @@ def home(request):
     articles = Article.objects.all()
     return render(request, 'core/index.html', {'pictures': pictures, 'articles': articles})
 
-def points(request):
-    return render(request, 'core/puntos.html')
-
 def store(request):
     return render(request, 'core/store.html')
 

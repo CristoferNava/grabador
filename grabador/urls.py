@@ -8,7 +8,7 @@ urlpatterns = [
     path('blog/', include('blog.urls')),
     path('form/', include('form.urls')),
     path('gallery/', include('gallery.urls')),
-
+    path('points/', include('points.urls')),
 ]
 
 if settings.DEBUG:

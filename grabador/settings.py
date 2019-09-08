@@ -20,6 +20,7 @@ INSTALLED_APPS = [
     'core',
     'form.apps.FormConfig',
     'gallery.apps.GalleryConfig',
+    'points.apps.PointsConfig',
 ]
 
 MIDDLEWARE = [
